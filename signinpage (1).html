@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html {
+		  scroll-behavior: smooth;
+		}
+	</style>
+	<title> Sign in </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body background="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2015/06/Canada-New-Worker-Safety-group-of-workers.jpg" style= "background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover" >
+    <link rel="stylesheet" href="signinpage.css">
+	<div class = "all">
+		<div id="seged"></div>
+		<div id="welcome" align=middle class="w3-container w3-center w3-animate-zoom" >
+			Welcome!      
+			<div id="how" >
+				How would you like to sign in?
+				<div class="scroll-container">
+					<a href="#admin">Sign in as admin</a>
+					<a href="#guest">Sign in as customer</a>
+				</div>
+				You haven't got an account yet?
+				<a href="register.html">Register a new account</a>
+			</div>
+		</div>
+		<div align = center id="signin">
+		<form method=post action=signin.php>
+			<div id="admin" >
+				<table border = 3 style="border-color:black" >
+				<tr>
+				<td>Sign in as admin:</td>
+				</tr>
+				<tr>
+				<td>
+				<font size = 5 >E-mail:</font>
+				<font size=3 ><input name="e-mail" type=text> </font>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<font size = 5 >Password:</font>
+				<font size=3 ><input name="password" type=password id="myInput"><br><input type="checkbox" onclick="myFunction()">Show Password</font>
+				<script>
+					function myFunction() {
+					  var x = document.getElementById("myInput");
+					  if (x.type === "password") {
+						x.type = "text";
+					  } else {
+						x.type = "password";
+					  }
+					}
+				</script>
+				</td>
+				</tr>
+				</table>
+				<br>
+				<font size=2><input name="admin" type=submit value="Sign in"></font>
+			</div>
+			<div id = "guest" >
+				<table border = 3 style="border-color:black" >
+				<tr>
+				<td>Sign in as customer:</td>
+				</tr>
+				<tr>
+				<td>
+				<font size = 5 >E-mail:</font>
+				<font size=3 ><input name="e-mail1" type=text> </font>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<font size = 5 >Password:</font>
+				<font size=3 ><input name="pasword" type=password id="myInput1"><br><input type="checkbox" onclick="MyFunction()">Show Password</font>
+				<script>
+					function MyFunction() {
+					  var x = document.getElementById("myInput1");
+					  if (x.type === "password") {
+						x.type = "text";
+					  } else {
+						x.type = "password";
+					  }
+					}
+				</script>
+				</td>
+				</tr>
+				</table>
+				<br>
+				<font size=2><input name="guest" type=submit value="Sign in"></font>
+			</div>    
+			</form>	
+		</div>
+	</div>
+</body>
+</html>
