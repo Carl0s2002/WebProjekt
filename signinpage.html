@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html {
+		  scroll-behavior: smooth;
+		}
+	</style>
+	<title> Sign in </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body background="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2015/06/Canada-New-Worker-Safety-group-of-workers.jpg" style= "background-repeat:no-repeat;background-position:center;background-attachment:fixed;background-size:cover" >
+    <link rel="stylesheet" href="signinpage.css">
+	<div class = "all">
+		<div id="seged"></div>
+		<div id="welcome" align=middle class="w3-container w3-center w3-animate-zoom" >
+			Welcome!      
+			<div id="how" >
+				How would you like to sign in?
+				<div class="scroll-container">
+					<a href="#admin">Sign in as admin</a>
+					<a href="#guest">Sign in</a>
+				</div>
+				You haven't got an account yet?
+				<a href="register.html">Register a new account</a>
+			</div>
+		</div>
+		<div id="signin">
+			<div align = left id="admin" >
+				Sign in as admin:
+				<form method=post action=signin.php>
+			</div>
+			<div align = right id = "guest" >
+				Sign in as customer:
+			</div>      
+		</div>
+	</div>
+</body>
+</html>
